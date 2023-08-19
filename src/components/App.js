@@ -12,17 +12,14 @@ const App = () => {
         const dispatch= useDispatch();
 
     useEffect(()=>{
-      dispatch(fetchdata);
-      console.log("done",apidata)
+      dispatch(fetchdata());
+      console.log("done",apidata);
     },[])
 
   return (
     <div>
-        {/* Do not remove the main div */}
-        {/* https://baconipsum.com/api/?type=meat-and-filler&paras=5&format=text */}
-  <h1>Hello Lorem Ipusum</h1>
+      <h1>Hello Lorem Ipusum</h1>
      {apidata}
-    
     </div>
   )
 }

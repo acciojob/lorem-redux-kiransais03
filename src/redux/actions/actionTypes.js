@@ -1,1 +1,1 @@
-export const API_DATA='API DATA';
+export const API_DATA='API_DATA';
